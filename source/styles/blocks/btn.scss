@@ -1,0 +1,37 @@
+.btn {
+  cursor: pointer;
+  padding: 8px 10px 10px;
+  width: 100%;
+  max-width: 288px;
+  background-color: $color-primary;
+  border-radius: 3px;
+  border: none;
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: $white;
+
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba($black, 0.25);
+    background: $color-primary-3;
+  }
+
+  &:active,
+  &:disabled,
+  &--pressed {
+    background: $color-primary-3;
+    color: $pressed;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 11px 13px 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 180px;
+  }
+}
